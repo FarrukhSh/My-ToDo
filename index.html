@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="displayCt()">
+
+    <div class="container">
+
+        <div class="header">
+
+            <div class="title">
+                <h1>To Do list</h1>
+            </div>
+
+            <div class="title-explanation">
+                <h3>Enter your tasks in the input field. If you have completed the added item, click on <img
+                        src="./images/done.png" alt="done">, if you want to delete, just click on the <img
+                        src="./images/Delete.png" alt="delete">.
+                </h3>
+            </div>
+
+            <div class="date-and-time">
+                <div id="current-date-time"></div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="data-input">
+            <div class="input-place">
+                <div class="label-taskField">Type a task</div>
+                <div class="enter-task">
+                    <input type="text" id="taskField" placeholder="e.g. buy groceries for next week....">
+                    <div id="error-message">
+                        <p></p>
+                    </div>
+                </div>
+
+                <span class="confirm-button" onclick="newElement()">Add</span>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="output-place">
+
+            <div class="task-list">
+
+                <ul id="outputToDoList">
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <footer>
+        <p>Coded by Farrukh Sharifzoda</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
